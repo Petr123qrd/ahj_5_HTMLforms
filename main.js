@@ -1,0 +1,1 @@
+!function(){"use strict";const t=document.querySelector(".container");new class{constructor(t){this.tooltip=t}onButton(t){t.preventDefault();const e=this.tooltip.querySelector(".tooltip");e.classList.contains("active")?e.classList.remove("active"):e.classList.add("active")}bind(){this.tooltip.querySelector(".btn").addEventListener("click",(t=>this.onButton(t)))}}(t).bind()}();
