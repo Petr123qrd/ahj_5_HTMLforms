@@ -1,0 +1,56 @@
+{
+  "name": "ahj_5_htmlforms",
+  "version": "1.0.0",
+  "description": "ahj_5_HTMLforms",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production",
+    "lint": "eslint .",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "doc": "jsdoc -c jsdoc.conf.json",
+    "preshow:coverage": "npm run coverage",
+    "show:coverage": "live-server coverage/lcov-report",
+    "preshow:dist": "npm run build",
+    "show:dist": "live-server dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Petr123qrd/ahj_5_HTMLforms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Petr123qrd/ahj_5_HTMLforms/issues"
+  },
+  "homepage": "https://github.com/Petr123qrd/ahj_5_HTMLforms#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "babel-jest": "^29.5.0",
+    "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^5.0.0",
+    "eslint": "^8.38.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.1",
+    "jest": "^29.5.0",
+    "live-serve": "^0.0.0",
+    "mini-css-extract-plugin": "^2.7.5",
+    "style-loader": "^3.3.2",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.80.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.3"
+  },
+  "dependencies": {
+    "core-js": "^3.30.1",
+    "terser-webpack-plugin": "^5.3.7",
+    "webpack-merge": "^5.8.0"
+  }
+}
