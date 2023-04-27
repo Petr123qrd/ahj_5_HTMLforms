@@ -1,9 +1,12 @@
-const { merge } = require('webpack-merge');
+const { merge } = require("webpack-merge");
+const TerserPlugin = require("terser-webpack-plugin");
 
-const buildMode = 'development';
-const common = require('./webpack.common')(buildMode);
+const buildMode = "production";
+const common = require("./webpack.common")(buildMode);
 
 module.exports = merge(common, {
   mode: buildMode,
-  devtool: 'inline-source-map',
+  optimization: {
+    minimizer: [new TerserPlugin({})],
+  },
 });
